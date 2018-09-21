@@ -10,3 +10,14 @@ function randomInteger(min, max) {
 }
 
 randomInteger(1, 3);
+
+// Alternative
+
+function randomInteger(min, max) {
+    var sum = min + Math.random() * (max + 1 - min);
+
+    sum = Math.floor(sum);
+    alert(sum)
+}
+
+randomInteger(4, 15);
