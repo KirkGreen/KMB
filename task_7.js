@@ -21,7 +21,9 @@ function findNumber(n, arr) {
 
         if (n === arr[i]) return i;
 
-    } return false;
+    }
+
+    return false;
 }
 
 var result = findNumber(21, arr);
