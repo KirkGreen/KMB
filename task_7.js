@@ -19,10 +19,11 @@ function findNumber(n, arr) {
 
     for (var i = 0; i < arr.length; i++){
 
-        if (n === arr[i]) return (true);
-    } return (false);
+        if (n === arr[i]) return i;
+
+    } return false;
 }
 
-var result = findNumber(2, arr);
+var result = findNumber(21, arr);
 
 console.log(result);
