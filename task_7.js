@@ -12,7 +12,6 @@
 // - поиск по массиву должен быть проведен за как можно меньшее количество итераций
 
 var n = 0;
-var counter = 0;
 var arr = [1, 3, 7, 9, 12, 15, 20, 21, 24, 25, 29,
     30, 32, 35, 37, 40, 42, 43, 46, 48, 50];
 
@@ -26,4 +25,4 @@ function findNumber(n, arr) {
 
 var result = findNumber(2, arr);
 
-alert(result);
+console.log(result);
