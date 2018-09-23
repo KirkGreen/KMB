@@ -26,6 +26,6 @@ function findNumber(n, arr) {
     return false;
 }
 
-var result = findNumber(21, arr);
+var result = findNumber(48, arr);
 
 console.log(result);
