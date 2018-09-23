@@ -12,7 +12,7 @@ function findNumber(n, arr) {
 
     var middle = Math.floor(arr.length / 2);
 
-    if (arr.length === 1 || n === arr[middle]){
+    if (arr.length === 1){
         if (n === arr[0]){
             return(console.log('Найдено'))
         } else {
@@ -30,10 +30,10 @@ function findNumber(n, arr) {
         var arr3 = arr.slice(- (arr.length +1) / 2);
         console.log(arr3);
         findNumber(n, arr3);
-    } else if (n === arr[middle]){
+    } else {
         return(console.log('Найдено'))
     }
 
 }
 
-findNumber(7, array);
+findNumber(29, array);
