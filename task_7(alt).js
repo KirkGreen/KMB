@@ -12,15 +12,15 @@ function findNumber(n, arr) {
     var middle = arr.length / 2;
 
     if (n < middle){
-        var arr1 = arr.slice(0, arr.length / 2);
-        console.log(arr1);
-        findNumber(n, arr1);
+        var arr = arr.slice(0, arr.length / 2);
+        console.log(arr);
+        findNumber(n, arr);
     } else if (n > middle){
-        var arr2 = arr.slice(- (arr.length +1) / 2);
-        console.log(arr2);
-        findNumber(n, arr2);
+        var arr = arr.slice(- (arr.length +1) / 2);
+        console.log(arr);
+        findNumber(n, arr);
     }
 
 }
 
-findNumber(30, arr);
+findNumber(3, arr);
