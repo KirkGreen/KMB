@@ -9,11 +9,9 @@ var array = [1, 3, 7, 9, 12, 15, 20, 21, 24, 25, 29,
 
 function findNumber(n, arr) {
 
-    var middle = Math.round(arr.length / 2);
+    var middle = Math.floor(arr.length / 2);
 
     console.log(arr[middle]);
-
-
 
     if (n < arr[middle]){
         var arr2 = arr.slice(0, arr.length / 2);
@@ -31,4 +29,4 @@ function findNumber(n, arr) {
 
 }
 
-findNumber(1, array);
+findNumber(4, array);
