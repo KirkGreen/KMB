@@ -8,12 +8,6 @@ var array = [1, 3, 7, 9, 12, 15, 20, 21, 24, 25, 29,
     30, 32, 35, 37, 40, 42, 43, 46, 48, 50];
 
 function findNumber(n, arr) {
-    //
-    // if (arr.length > 2){
-    //     var middle = Math.round(arr.length / 2);
-    // } else {
-    //     var middle = arr.length - 1;
-    // }
 
     var middle = Math.floor(arr.length / 2);
 
