@@ -17,4 +17,4 @@ function sortArr(arr) {
 
 }
 
-sortArr(array);
+sortArr(array );
