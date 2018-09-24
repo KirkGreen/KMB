@@ -11,5 +11,5 @@ alert(styles);
 styles[1] = "classic";
 alert(styles);
 styles.shift();
-styles.unshift("rap","reggy");
+styles.unshift("rap", "reggy");
 alert(styles);
