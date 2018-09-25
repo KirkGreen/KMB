@@ -8,8 +8,9 @@ function sortArr(arr) {
 
     while (toSort === true){
 
-        for (var i = 0; i < arr.length; i++){
+        toSort = false;
 
+        for (var i = 0; i < arr.length; i++){
 
             if (arr[i] > arr[i + 1]){
 
@@ -18,12 +19,12 @@ function sortArr(arr) {
                 arr[i + 1] = temp;
 
                 console.log(arr);
+
+                toSort = true;
+
             }
-
         }
-
     }
-
 }
 
 sortArr(array);
