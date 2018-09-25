@@ -4,10 +4,15 @@ console.log(array);
 
 function sortArr(arr) {
 
-    var isSort = true;
+    var toSort = true;
+    var counter = 0;
 
-    while (isSort === true){
+
+    while (toSort === true){
+
         for (var i = 0; i < arr.length; i++){
+
+            counter += 1;
 
             if (arr[i] > arr[i + 1]){
 
@@ -15,9 +20,17 @@ function sortArr(arr) {
                 arr[i] = arr[i + 1];
                 arr[i + 1] = temp;
 
-                console.log(arr)
+                console.log(arr);
             }
+
+            console.log(counter);
+
+            if (counter === arr.length * arr.length){
+                toSort = false;
+            }
+
         }
+
     }
 
 }
