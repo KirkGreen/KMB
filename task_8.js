@@ -1,20 +1,26 @@
 var array = [5, 10, 1, 7, 3, 8, 6, 2];
 
+console.log(array);
+
 function sortArr(arr) {
 
-    for (var i = 0; i < arr.length; i++){
+    var isSort = true;
 
-        if (arr[i] > arr[i + 1]){
+    while (isSort === true){
+        for (var i = 0; i < arr.length; i++){
 
-            var temp = arr[i];
-            arr[i] = arr[i + 1];
-            arr[i + 1] = temp;
+            if (arr[i] > arr[i + 1]){
 
-            console.log(arr)
+                var temp = arr[i];
+                arr[i] = arr[i + 1];
+                arr[i + 1] = temp;
+
+                console.log(arr)
+            }
         }
-
     }
 
 }
 
-sortArr(array );
+sortArr(array);
+
