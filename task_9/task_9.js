@@ -20,36 +20,7 @@ for (var i = 0; i < numbers.length; i++){
         res.innerHTML += ' = ';
         res.innerHTML += result;
         res.innerHTML += ';';
-
-        switch (m){
-            case 1:
-                col.appendChild(res);
-                break;
-            case 2:
-                col.appendChild(res);
-                break;
-            case 3:
-                col.appendChild(res);
-                break;
-            case 4:
-                col.appendChild(res);
-                break;
-            case 5:
-                col.appendChild(res);
-                break;
-            case 6:
-                col.appendChild(res);
-                break;
-            case 7:
-                col.appendChild(res);
-                break;
-            case 8:
-                col.appendChild(res);
-                break;
-            case 9:
-                col.appendChild(res);
-                break;
-        }
+        col.appendChild(res);
 
     }
 
