@@ -7,20 +7,35 @@ var display = document.getElementById('display');
 
 function putNumber(a){
 
-    if(a === 'c'){
-        num1 = '';
-        display.value = 0;
+    if(action === ''){
+        if(a === 'c'){
+            num1 = '';
+            display.value = 0;
+        } else {
+            num1 += a;
+            display.value = +num1;
+            console.log(num1);
+        }
     } else {
-        num1 += a;
-        display.value = +num1;
-        console.log(num1);
+        if(a === 'c'){
+            num2 = '';
+            display.value = 0;
+        } else {
+            num2 += a;
+            display.value = +num2;
+            console.log(num2);
+        }
     }
-
 }
+
+
 
 function putAction(n) {
     action = n;
     console.log(action);
+}
+
+function equal(e) {
 
     switch (action){
         case '+':
@@ -40,10 +55,12 @@ function putAction(n) {
             console.log(result);
             break;
     }
-}
 
-function equal(e) {
     display.value = result;
+
+    action = '';
+    num1 = 0;
+    num2 = 0;
 }
 
 
