@@ -1,5 +1,5 @@
-var num1 = '';
-var num2 = '';
+var num1 = '0';
+var num2 = '0';
 
 var action = '';
 var result;
@@ -37,16 +37,16 @@ function putAction(n) {
     if (num2 !== '0'){
         switch (action){
             case '+':
-                num1 = +num1 + +num2;
+                num1 = parseInt(num1) + parseInt(num2);
                 break;
             case '-':
-                num1 = +num1 - +num2;
+                num1 = parseFloat(num1) - parseFloat(num2);
                 break;
             case '*':
-                num1 = +num1 * +num2;
+                num1 = parseFloat(num1) * parseFloat(num2);
                 break;
             case '/':
-                num1 = +num1 / +num2;
+                num1 = parseFloat(num1) / parseFloat(num2);
                 break;
         }
     }
@@ -56,25 +56,29 @@ function equal() {
 
     switch (action){
         case '+':
-            result = +num1 + +num2;
+            result = parseInt(num1) + parseInt(num2);
             toString(result);
             console.log(result);
             break;
         case '-':
-            result = +num1 - +num2;
+            result = parseFloat(num1) - parseFloat(num2);
             toString(result);
             console.log(result);
             break;
         case '*':
-            result = +num1 * +num2;
+            result = parseFloat(num1) * parseFloat(num2);
             toString(result);
             console.log(result);
             break;
         case '/':
-            result = +num1 / +num2;
+            result = parseFloat(num1) / parseFloat(num2);
             toString(result);
             console.log(result);
             break;
+    }
+
+    if(result === Infinity){
+        result = 'Error';
     }
 
     display.value = result;
@@ -82,7 +86,7 @@ function equal() {
     action = '';
     num1 = result;
     num2 = '0';
-    result = 0;
+    result = '0';
 }
 
 
