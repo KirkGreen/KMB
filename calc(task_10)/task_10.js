@@ -35,7 +35,7 @@ function putAction(n) {
     console.log(action);
 }
 
-function equal(e) {
+function equal() {
 
     switch (action){
         case '+':
@@ -59,8 +59,9 @@ function equal(e) {
     display.value = result;
 
     action = '';
-    num1 = 0;
-    num2 = 0;
+    num1 = '0';
+    num2 = '0';
+    result = 0;
 }
 
 
