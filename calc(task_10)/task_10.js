@@ -1,5 +1,5 @@
-var num1 = '0';
-var num2 = '0';
+var num1 = '';
+var num2 = '';
 
 var action = '';
 var result;
@@ -33,46 +33,25 @@ function putNumber(a){
 function putAction(n) {
     action = n;
     console.log(action);
-
-    if (num2 !== '0'){
-        switch (action){
-            case '+':
-                num1 = parseInt(num1) + parseInt(num2);
-                break;
-            case '-':
-                num1 = parseFloat(num1) - parseFloat(num2);
-                break;
-            case '*':
-                num1 = parseFloat(num1) * parseFloat(num2);
-                break;
-            case '/':
-                num1 = parseFloat(num1) / parseFloat(num2);
-                break;
-        }
-    }
 }
 
 function equal() {
 
     switch (action){
         case '+':
-            result = parseInt(num1) + parseInt(num2);
-            toString(result);
+            result = Number(num1) + Number(num2);
             console.log(result);
             break;
         case '-':
-            result = parseFloat(num1) - parseFloat(num2);
-            toString(result);
+            result = Number(num1) - Number(num2);
             console.log(result);
             break;
         case '*':
-            result = parseFloat(num1) * parseFloat(num2);
-            toString(result);
+            result = Number(num1) * Number(num2);
             console.log(result);
             break;
         case '/':
-            result = parseFloat(num1) / parseFloat(num2);
-            toString(result);
+            result = Number(num1) / Number(num2);
             console.log(result);
             break;
     }
@@ -84,8 +63,8 @@ function equal() {
     display.value = result;
 
     action = '';
-    num1 = result;
-    num2 = '0';
+    num1 = String(result);
+    num2 = '';
     result = '0';
 }
 
