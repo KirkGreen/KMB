@@ -13,7 +13,7 @@ function putNumber(a){
             display.value = 0;
         } else {
             num1 += a;
-            display.value = +num1;
+            display.value = Number(num1);
             console.log(num1);
         }
     } else {
@@ -22,17 +22,45 @@ function putNumber(a){
             display.value = 0;
         } else {
             num2 += a;
-            display.value = +num2;
+            display.value = Number(num2);
             console.log(num2);
         }
     }
+
 }
-
-
 
 function putAction(n) {
     action = n;
     console.log(action);
+
+    if (num2 !== ''){
+        switch (action){
+            case '+':
+                num1 = Number(num1) + Number(num2);
+                display.value = Number(num1);
+                console.log(num1);
+                num2 = '';
+                break;
+            case '-':
+                num1 = Number(num1) - Number(num2);
+                display.value = Number(num1);
+                console.log(num1);
+                num2 = '';
+                break;
+            case '*':
+                num1 = Number(num1) * Number(num2);
+                display.value = Number(num1);
+                console.log(num1);
+                num2 = '';
+                break;
+            case '/':
+                num1 = Number(num1) / Number(num2);
+                display.value = Number(num1);
+                console.log(num1);
+                num2 = '';
+                break;
+        }
+    }
 }
 
 function equal() {
