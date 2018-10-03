@@ -7,30 +7,29 @@
 </head>
 <body>
 
-<form class="calc_container">
-
+<form name="calc" class="calc">
     <div>
-        <input id="display" type="text" value="0" disabled>
+        <input id="display" name="input" type="text" value="0" disabled>
     </div>
 
     <div class="buttons">
-        <button type="button" value="1" onclick=""> 1 </button>
-        <button type="button" value="2" onclick=""> 2 </button>
-        <button type="button" value="3" onclick=""> 3 </button>
+        <button type="button" value="1" onclick="putNumber(1)"> 1 </button>
+        <button type="button" value="2" onclick="putNumber(2)"> 2 </button>
+        <button type="button" value="3" onclick="putNumber(3)"> 3 </button>
         <button type="button" value="+" onclick=""> + </button>
 
-        <button type="button" value="4" onclick=""> 4 </button>
-        <button type="button" value="5" onclick=""> 5 </button>
-        <button type="button" value="6" onclick=""> 6 </button>
+        <button type="button" value="4" onclick="putNumber(4)"> 4 </button>
+        <button type="button" value="5" onclick="putNumber(5)"> 5 </button>
+        <button type="button" value="6" onclick="putNumber(6)"> 6 </button>
         <button type="button" value="-" onclick=""> - </button>
 
-        <button type="button" value="7" onclick=""> 7 </button>
-        <button type="button" value="8" onclick=""> 8 </button>
-        <button type="button" value="9" onclick=""> 9 </button>
-        <button type="button" value="x" onclick=""> x </button>
+        <button type="button" value="7" onclick="putNumber(7)"> 7 </button>
+        <button type="button" value="8" onclick="putNumber(8)"> 8 </button>
+        <button type="button" value="9" onclick="putNumber(9)"> 9 </button>
+        <button type="button" value="*" onclick=""> x </button>
 
-        <button type="button" value="C" onclick=""> C </button>
-        <button type="button" value="0" onclick=""> 0 </button>
+        <button type="button" value="C" onclick="putNumber('c')"> C </button>
+        <button type="button" value="0" onclick="putNumber(0)"> 0 </button>
         <button type="button" value="=" onclick=""> = </button>
         <button type="button" value="/" onclick=""> / </button>
 
