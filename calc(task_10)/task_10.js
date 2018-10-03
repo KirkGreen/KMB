@@ -1,15 +1,23 @@
-var num1 = '';
+var num = '';
 var action = '';
-var result = document.getElementById('display');
+var display = document.getElementById('display');
 
 function putNumber(a){
-    num1 += a;
-    result.value = num1;
-    console.log(num1);
 
     if(a === 'c'){
-        num1 = '';
-        result.value = 0;
+        num = '';
+        display.value = 0;
+    } else {
+        num += a;
+        display.value = num;
+        console.log(num);
     }
 }
+
+function putAction(n) {
+    action = n;
+    display.value = num + action;
+    console.log(action);
+}
+
 
