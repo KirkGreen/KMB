@@ -1,5 +1,5 @@
 .calc{
-    background-color: dimgray;
+    background-color: darkgrey;
     margin: 0 auto;
     width: 350px;
     height: 400px;
@@ -25,7 +25,7 @@
     bottom: 25px;
     width: 300px;
     height: 250px;
-    background-color: dimgray;
+    background-color: darkgrey;
 }
 
 button{
