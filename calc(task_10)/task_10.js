@@ -11,6 +11,8 @@ function putNumber(a){
         if(a === 'c'){
             num1 = '';
             display.value = 0;
+            action = '';
+            result = '0';
         } else {
             num1 += a;
             display.value = Number(num1);
@@ -20,6 +22,8 @@ function putNumber(a){
         if(a === 'c'){
             num2 = '';
             display.value = 0;
+            action = '';
+            result = '0';
         } else {
             num2 += a;
             display.value = Number(num2);
@@ -37,29 +41,27 @@ function putAction(n) {
         switch (action){
             case '+':
                 num1 = Number(num1) + Number(num2);
-                display.value = Number(num1);
                 console.log(num1);
                 num2 = '';
                 break;
             case '-':
                 num1 = Number(num1) - Number(num2);
-                display.value = Number(num1);
                 console.log(num1);
                 num2 = '';
                 break;
             case '*':
                 num1 = Number(num1) * Number(num2);
-                display.value = Number(num1);
                 console.log(num1);
                 num2 = '';
                 break;
             case '/':
                 num1 = Number(num1) / Number(num2);
-                display.value = Number(num1);
                 console.log(num1);
                 num2 = '';
                 break;
         }
+
+        display.value = String(num1);
     }
 }
 
