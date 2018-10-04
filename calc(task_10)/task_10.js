@@ -34,8 +34,6 @@ function putNumber(a){
 }
 
 function putAction(n) {
-    action = n;
-    console.log(action);
 
     if (num2 !== ''){
         switch (action){
@@ -63,6 +61,10 @@ function putAction(n) {
 
         display.value = String(num1);
     }
+
+    action = n;
+    console.log(action);
+
 }
 
 function equal() {
